@@ -1,9 +1,9 @@
 import requests
 
-API_KEY = "62bf967ec60048bea29cdbea9915e9b3"  # Replace with your actual API key
+API_KEY = ""  # Replace with your actual API key
 
 def get_top_headlines(category="general", country="us"):
-    url = f"https://newsapi.org/v2/top-headlines?country={country}&category={category}&apiKey={API_KEY}"
+    url = f"https://newsapi.org/v2/top-headlines?country={country}&category={category}&apiKey={API_KEY}&pageSize=5&language=en"
     
     try:
         response = requests.get(url)
